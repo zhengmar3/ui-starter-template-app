@@ -17,6 +17,7 @@
     "@mui/x-data-grid": "^6.7.0",
     "@mui/x-date-pickers": "^6.7.0",
     "@r3-ui-test/ui-organism-library": "^0.3.3",
+    "@tanstack/react-query": "^4.29.12",
     "axios": "^1.4.0",
     "dayjs": "^1.11.8",
     "formik": "^2.4.1",
