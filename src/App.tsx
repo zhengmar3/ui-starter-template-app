@@ -1,4 +1,4 @@
-import { Button, CssBaseline } from "@mui/material";
+import { CssBaseline } from "@mui/material";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { BrowserRouter } from "react-router-dom";
@@ -18,6 +18,7 @@ import {
 import { baseTheme } from "./theme/baseTheme";
 import { lightPalette } from "./theme/lightPalette";
 import { darkPalette } from "./theme/darkPalette";
+import AppRoutes from "./components/AppRoutes/AppRoutes";
 
 const queryClient = new QueryClient({
   queryCache: new QueryCache({
@@ -52,16 +53,7 @@ function App() {
             <NotificationConfigurator />
             <CssBaseline />
             <LocalizationProvider dateAdapter={AdapterDayjs}>
-              <h1 className="text-3xl font-bold underline">Hello world!</h1>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={() => {
-                  NotificationSystem.info("text");
-                }}
-              >
-                Success
-              </Button>
+              <AppRoutes />
             </LocalizationProvider>
           </NotificationProvider>
         </CustomThemeProvider>
