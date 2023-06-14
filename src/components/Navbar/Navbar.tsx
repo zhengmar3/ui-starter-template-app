@@ -5,7 +5,7 @@ import {
 } from "@r3-ui-test/ui-organism-library";
 import { Link, useLocation } from "react-router-dom";
 
-import { routeMapping } from "../../constants/routeMapping";
+import { routeMapping } from "../../routes/routeMapping";
 
 function NavBar() {
   const { pathname } = useLocation();
