@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import AppShell from "../AppShell/AppShell";
 import * as RoutePaths from "../../constants/routeNames";
-import { routeMapping } from "./routeMapping";
+import { routeMapping } from "../../constants/routeMapping";
 
 function AppRoutes() {
   const renderRoutes = (useAppShell: boolean) => {

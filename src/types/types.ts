@@ -6,4 +6,5 @@ export interface RouteItem {
   element: ReactNode;
   children?: RouteItem[];
   withoutAppShell?: boolean;
+  icon?: ReactNode;
 }
